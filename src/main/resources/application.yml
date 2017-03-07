@@ -1,0 +1,8 @@
+server:
+  port: 1111
+eureka:
+  client:
+    registerWithEureka: false  # Eureka Server同时也是Client，但没必要注册和获取注册信息
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
